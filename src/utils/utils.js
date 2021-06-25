@@ -18,3 +18,10 @@ export const millisToMinutesAndSeconds = millis => {
 
   return data;
 };
+
+export const getDateBasedOnLng = (lng,date) => {
+  return (new Intl.DateTimeFormat(lng, {
+    year: 'numeric', month: 'numeric', day: 'numeric',
+    hour: 'numeric', minute: 'numeric', second: 'numeric'
+  }).format(date).toString());
+};

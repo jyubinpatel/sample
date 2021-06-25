@@ -1,6 +1,17 @@
 import {StyleSheet} from 'react-native';
 
 export default styles = StyleSheet.create({
+  splashView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  buttonView: {
+    width: 250,
+    padding: 10,
+    borderRadius:10,
+    color: '#f4511e',
+  },
   containerView: {
     flex: 1,
     padding: 10,
@@ -40,4 +51,9 @@ export default styles = StyleSheet.create({
     fontWeight: '300',
     lineHeight: 18,
   },
+  dateText: {
+    fontSize: 24, 
+    fontStyle: 'italic', 
+    lineHeight: 30,
+  }
 });
